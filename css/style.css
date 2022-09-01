@@ -1,0 +1,154 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Secular+One&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Secular One', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 73px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+.game {
+  width: 100%;
+  height: calc(100vh - 73px);
+  padding: 30px;
+  background: rgb(5, 41, 71);
+}
+
+.game__score {
+  position: relative;
+
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+
+  font-size: 50px;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__score::before {
+  content: 'user';
+  display: block;
+
+  position: absolute;
+  left: -20px;
+
+  width: 40px;
+  height: 20px;
+  background: rgb(73, 143, 7);
+
+  font-size: 12.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__score::after {
+  content: 'comp';
+  display: block;
+
+  position: absolute;
+  right: -20px;
+
+  width: 40px;
+  height: 20px;
+  background: rgb(143, 7, 7);
+
+  font-size: 12.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__result {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+.options {
+  width: 420px;
+  margin: 30px auto 0;
+
+  display: flex;
+  row-gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.options__wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options__block {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+
+  transition: background-color .6s;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options__img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.options__title {
+  font-size: 18px;
+  color: #fff;
+}
+
+.win {
+  background: rgb(73, 143, 7);
+}
+
+.loss {
+  background: rgb(143, 7, 7);
+}
+
+.draw {
+  background: rgb(11, 84, 144);
+}

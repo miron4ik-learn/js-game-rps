@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Rock Paper Scissors</h1>
+  </header>
+
+  <main class="game">
+    <div class="game__score" id="score">0:0</div>
+    <h2 class="game__result" id="result"></h2>
+
+    <div class="options">
+      <div class="options__wrapper">
+        <div class="options__block r" data-option="Rock">
+          <img src="img/rock.png" alt="" class="options__img">
+        </div>
+
+        <div class="options__block p" data-option="Paper">
+          <img src="img/paper.png" alt="" class="options__img">
+        </div>
+
+        <div class="options__block s" data-option="Scissors">
+          <img src="img/scissors.png" alt="" class="options__img">
+        </div>
+      </div>
+
+      <h3 class="options__title">Make your move</h3>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
